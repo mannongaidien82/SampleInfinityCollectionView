@@ -16,10 +16,15 @@ class CollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
     }
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    required init?(coder aDecoder: NSCoder) {
+         super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
     }
     
+//    required init(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
+//    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
